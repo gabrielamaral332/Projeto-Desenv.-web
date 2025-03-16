@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura principal */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima da tela */
+    background-image: url("https://i.pinimg.com/474x/98/df/81/98df8173d5e5c9d49b02dd862f73037b.jpg");
+}
+
+header {
+    background: rgb(5, 19, 83);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.box {
+    background: rgb(206, 24, 24);
+    padding: 20px;
+    width: 20%;            
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 Mobile (até 600px) */
+@media (max-width: 600px) {
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+/* 📲 Tablets (601px a 1024px) */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%;
+    }
+}
