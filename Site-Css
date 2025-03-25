@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Altura mínima da tela */
-    background-image: url("https://i.pinimg.com/474x/98/df/81/98df8173d5e5c9d49b02dd862f73037b.jpg");
+    background-image: url(""./assets/imagemfundo.jpg"");
 }
 
 header {
