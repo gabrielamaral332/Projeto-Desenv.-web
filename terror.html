@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Terror</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Romance - Literary Dreams</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .book-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .book-card {
+      width: 220px;
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+      text-align: center;
+    }
+
+    .book-card:hover {
+      transform: scale(1.03);
+      background-color: #f5f5f5;
+    }
+
+    .book-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo à página de Terror!</h1>
+  <header>📚 Categoria: Terror</header>
+
+  <main>
+    <div class="book-container">
+      <div class="book-card">
+        <a href="leitura.html?livro=Verity%20Of%20">
+            <h3>Verity</h3>
+                <p>Collen Hoover</p>
+                <p>conta a história de Lowen Ashleigh, uma escritora contratada para terminar uma série de livros após a autora original, Verity Crawford, sofrer um acidente.</p>
+        </a>
+      </div>
+
+      <div class="book-card">
+        <a href="leitura.html?livro=IT-%20A%20Do%20Coisa">
+            <h3>It - A Coisa</h3>
+                <p>Stephen King</p>
+                <p>crianças desaparecem misteriosamente.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 - Literary Dreams</footer>
 </body>
 </html>
